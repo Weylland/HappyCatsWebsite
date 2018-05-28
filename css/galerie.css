@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*--------------NAV---------------*/
+ul {
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #135699;
+  z-index: 1;
+}
+li {
+  display: inline-block;
+  float: left;
+  margin-right: 1px;
+}
+li a {
+  display: block;
+  min-width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #FFF;
+  background-color: #135699;
+  text-decoration: none;
+}
+li:hover a {
+  background-color: #1976d2;
+}
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]:checked ~ #menu {
+  display: block;
+}
+.show-menu {
+  font-family: "Helvetica Neue", Helvetica, Arial,sans-serif;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  background-color: #135699;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+.show-menu:hover {
+  background-color: #1976d2;
+}
+/*------------------------HEADER------------------------------*/
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(../img/cat-694730.jpg);
+  background-size:  cover;
+  background-repeat: no-repeat;
+  background-position: 80% 80%;
+  width: 100%;
+  min-height: 800px;
+}
+header h1 {
+  font-family: 'Cagliostro', sans-serif;
+  text-align: center;
+  font-size: 80px;
+  color: white;
+  margin-left: 8%;
+}
+/*--------------SECTION----------*/
+div.galerie {
+  background-color: #E6E6E6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 40px 0;
+}
+div.galerie img {
+  width: 500px;
+  height: auto;
+  margin: 5px;
+}
+.bande {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #135699;
+  width: 100%;
+  height: 70px;
+}
+.bande h2 {
+  color: white;
+  font-family: 'Cagliostro', sans-serif;
+  font-size: 2rem;
+}
+/*--------------FOOTER---------------*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #135699;
+  width: 100%;
+  height: 300px;
+  color: white;
+}
+footer p {
+  font-family: 'Roboto', sans-serif;
+}
+footer h3 {
+  font-family: 'Cagliostro', sans-serif;
+  font-size: 1.4rem;
+}
+.contact-int {
+  width: 40%;
+  text-align: center;
+}
+.contact-int a {
+  color: white;
+  text-decoration: none;
+}
+.contact-int a:hover {
+  font-size: 1.2rem;
+}
+footer img {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+.chat1 {
+  margin-left: 100px;
+}
+.chat2 {
+  margin-right: 100px;
+}
+/*--------------@MEDIA----------------*/
+@media screen and (max-width: 1000px) {
+  ul {
+    position: static;
+    display: none;
+  }
+  header {
+    background-image: url(../img/cat-6.jpg);
+    background-position: center;
+    justify-content: center;
+  }
+  header h1  {
+    font-size: 80px;
+    margin: 0 0 200px 0;
+  }
+  ul li, li a {
+    width: 100%;
+  }
+  .show-menu {
+    display: block;
+  }
+  footer img {
+    display: none;
+  }
+  .contact-int {
+    width: 100%;
+  }
+  footer p {
+    font-size: .8rem;
+  }
+  .contact-int a:hover {
+    font-size: 1rem;
+  }
+}
